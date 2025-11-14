@@ -1,4 +1,3 @@
-````markdown
 # 🇳🇬 Yoruba-G2P  
 ### **Tone-Aware Yoruba Grapheme-to-Phoneme Toolkit (IPA + ASCII + MFA-Ready)**
 
