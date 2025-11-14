@@ -416,24 +416,32 @@ class YorubaG2P:
             for p in seq:
                 phones.add(p)
         return sorted(phones)
+    
+    @staticmethod
+    def ensure_parent(path):
+        path = str(path)
+        dirpath = os.path.dirname(path)
+        if dirpath:
+            os.makedirs(dirpath, exist_ok=True)
+
 
     @staticmethod
     def save_dict(path, lexicon):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
+        YorubaG2P.ensure_parent(path)
         with open(path, "w", encoding="utf-8") as f:
             for word in sorted(lexicon.keys()):
                 f.write(f"{word}\t{' '.join(lexicon[word])}\n")
 
     @staticmethod
     def save_phoneset(path, phones):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
+        YorubaG2P.ensure_parent(path)
         with open(path, "w", encoding="utf-8") as f:
             for p in phones:
                 f.write(p + "\n")
 
     @staticmethod
     def save_stats(path, vocab_counter, problem_words, ipa_phoneset, ascii_phoneset):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
+        YorubaG2P.ensure_parent(path)
         stats = {
             "num_vocab_items": len(vocab_counter),
             "num_ipa_entries": len(vocab_counter),
@@ -449,6 +457,8 @@ class YorubaG2P:
     # Full pipeline
     # -------------------
     def build_all_from_labs(self, lab_root: str, splits=("train", "valid", "test"), out_dir: str = "yoruba_g2p_out"):
+        # Ensure out_dir is always a string
+        out_dir = str(out_dir)
         os.makedirs(out_dir, exist_ok=True)
 
         vocab_counter = self.build_vocab_from_labs(lab_root, splits)

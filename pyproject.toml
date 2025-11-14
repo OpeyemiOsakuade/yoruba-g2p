@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yoruba-g2p"
-version = "0.1.0"
+version = "0.1.1"
 description = "Yoruba grapheme-to-phoneme tool with tones (IPA + ASCII + MFA-ready)"
 authors = [
   { name = "Opeyemi Osakuade", email = "osakuadeopeyemi@gmail.com" }
