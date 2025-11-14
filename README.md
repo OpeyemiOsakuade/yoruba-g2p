@@ -75,7 +75,7 @@ from yoruba_g2p import YorG2P
 
 g2p = YorG2P()
 #edit these
-print(g2p.to_ipa("ọ̀mọ́"))
+print(g2p.to_ipa("ọ̀yọ́"))
 print(g2p.to_ascii("ọ̀mọ́"))
 ```
 
