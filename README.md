@@ -74,7 +74,6 @@ pip install git+https://github.com/<your-username>/yoruba-g2p.git
 from yoruba_g2p import YorG2P
 
 g2p = YorG2P()
-#edit these
 print(g2p.to_ipa("ọ̀yọ́"))
 print(g2p.to_ascii("ọ̀mọ́"))
 ```
@@ -90,7 +89,8 @@ Another example:
 
 ```python
 g2p.to_ipa("àwọn")
-# ['a_L', 'w', 'ɔ_M', 'n']
+
+['a_L', 'w', 'ɔ_M', 'n']
 ```
 
 ---
