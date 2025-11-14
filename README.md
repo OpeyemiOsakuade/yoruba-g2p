@@ -1,3 +1,40 @@
+<p align="center">
+  <!-- PyPI version -->
+  <a href="https://pypi.org/project/yoruba-g2p/">
+    <img src="https://img.shields.io/pypi/v/yoruba-g2p.svg?color=blue&label=PyPI%20Version" />
+  </a>
+
+  <!-- Python versions -->
+  <a href="https://pypi.org/project/yoruba-g2p/">
+    <img src="https://img.shields.io/pypi/pyversions/yoruba-g2p.svg" />
+  </a>
+
+  <!-- GitHub Actions CI -->
+  <a href="https://github.com/OpeyemiOsakuade/yoruba-g2p/actions">
+    <img src="https://github.com/OpeyemiOsakuade/yoruba-g2p/workflows/CI/badge.svg" />
+  </a>
+
+  <!-- License -->
+  <a href="https://github.com/OpeyemiOsakuade/yoruba-g2p/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/OpeyemiOsakuade/yoruba-g2p.svg" />
+  </a>
+
+  <!-- Downloads -->
+  <a href="https://pepy.tech/project/yoruba-g2p">
+    <img src="https://static.pepy.tech/badge/yoruba-g2p" />
+  </a>
+</p>
+
+<p align="center">
+
+  <img src="https://img.shields.io/badge/Yorùbá%20NLP-Tone%20Aware-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Linguistic%20Accuracy-✓%20Yorùbá%20Verified-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Yorùbá%20G2P-🪘%20Tone%20Correct-orange?style=for-the-badge">
+
+</p>
+
+
+
 # 🇳🇬 Yoruba-G2P  
 ### **Tone-Aware Yoruba Grapheme-to-Phoneme Toolkit (IPA + ASCII + MFA-Ready)**
 

@@ -1,9 +1,3 @@
-```
-CONTRIBUTING.md
-```
-
----
-
 # Contributing to yoruba-g2p
 
 Thank you for your interest in contributing to **yoruba-g2p**!  
