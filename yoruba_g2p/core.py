@@ -416,14 +416,13 @@ class YorubaG2P:
             for p in seq:
                 phones.add(p)
         return sorted(phones)
-    
+
     @staticmethod
     def ensure_parent(path):
         path = str(path)
         dirpath = os.path.dirname(path)
         if dirpath:
             os.makedirs(dirpath, exist_ok=True)
-
 
     @staticmethod
     def save_dict(path, lexicon):
