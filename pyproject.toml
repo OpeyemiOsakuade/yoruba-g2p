@@ -4,15 +4,47 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yoruba-g2p"
-version = "0.1.1"
-description = "Yoruba grapheme-to-phoneme tool with tones (IPA + ASCII + MFA-ready)"
+version = "0.2.0"
+description = "Yoruba grapheme-to-phoneme tool with tones (IPA + ASCII + MFA-ready)."
 authors = [
   { name = "Opeyemi Osakuade", email = "osakuadeopeyemi@gmail.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
+
 dependencies = [
   "epitran>=1.22",
+]
+
+license = { text = "MIT" }
+
+keywords = [
+  "g2p",
+  "grapheme-to-phoneme",
+  "yoruba",
+  "nlp",
+  "speech",
+  "ipa",
+  "tones",
+  "phonetics",
+  "mfa",
+  "pronunciation-dictionary",
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [project.scripts]
@@ -20,3 +52,6 @@ yoruba-g2p = "yoruba_g2p.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+Documentation = "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+Source = "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+Issues = "https://github.com/OpeyemiOsakuade/yoruba-g2p/issues"

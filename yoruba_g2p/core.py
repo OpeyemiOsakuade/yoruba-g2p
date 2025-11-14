@@ -187,10 +187,20 @@ class YorubaG2P:
             # 2-char affricate/digraph
             if i + 1 < L:
                 pair = ipa_str[i:i+2]
+                    # labial-velars: kp, gb
+                if pair == "kp" or pair == "gb":
+                    if buffer:
+                        phones.append(buffer)
+                        buffer = ""
+                    phones.append(pair)
+                    i += 2
+                    continue
+
                 if pair in self.AFFRICATES:
                     if buffer:
                         phones.append(buffer)
-                    buffer = pair
+                    buffer = ""
+                    phones.append(pair)
                     i += 2
                     continue
 
