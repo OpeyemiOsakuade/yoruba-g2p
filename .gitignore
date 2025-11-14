@@ -1,0 +1,100 @@
+# -----------------------------
+#  Python cache + compiled files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------------
+#  Virtual environments
+# -----------------------------
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+
+# -----------------------------
+#  Build / Packaging / PyPI files
+# -----------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+wheels/
+
+# -----------------------------
+#  Jupyter Notebook checkpoints
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+#  IDE files
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+#  Logs
+# -----------------------------
+*.log
+logs/
+
+# -----------------------------
+#  OS-generated files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+#  MFA / G2P Outputs (generated)
+# -----------------------------
+*.dict
+*phoneset.txt
+stats.json
+
+# If you store demo outputs
+outputs/
+results/
+artifacts/
+temp/
+
+# -----------------------------
+#  Optional: If you use poetry
+# -----------------------------
+.poetry/
+poetry.lock
+
+# -----------------------------
+#  Optional: If you use pyenv
+# -----------------------------
+.python-version
+
+# -----------------------------
+#  Optional: If you use test coverage
+# -----------------------------
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# -----------------------------
+#  Optional: If you use mkdocs
+# -----------------------------
+site/
+
+# -----------------------------
+#  Optional: If storing models
+# -----------------------------
+models/
+*.pt
+*.pth
+*.ckpt

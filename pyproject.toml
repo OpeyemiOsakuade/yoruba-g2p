@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yoruba-g2p"
+version = "0.1.0"
+description = "Yoruba grapheme-to-phoneme tool with tones (IPA + ASCII + MFA-ready)"
+authors = [
+  { name = "Opeyemi Osakuade", email = "osakuadeopeyemi@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "epitran>=1.22",
+]
+
+[project.scripts]
+yoruba-g2p = "yoruba_g2p.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/OpeyemiOsakuade/yoruba-g2p"
