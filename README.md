@@ -130,7 +130,7 @@ All **MFA-ready**.
 ### **1. IPA Dictionary**
 
 ```
-ọ̀mọ́    ɔ_L m ɔ_H
+ọmọ    ɔ_M m ɔ_M
 jẹ́      d͡ʒ ɛ_H
 àwọn     a_L w ɔ_M n
 ```
@@ -138,7 +138,7 @@ jẹ́      d͡ʒ ɛ_H
 ### **2. ASCII Dictionary**
 
 ```
-ọ̀mọ́    O_L m O_H
+ọmọ    O_M m O_M
 jẹ́      dZ e_H
 àwọn     a_L w O_M n
 ```
