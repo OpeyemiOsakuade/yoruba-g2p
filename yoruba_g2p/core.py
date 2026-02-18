@@ -6,6 +6,11 @@ from collections import Counter
 
 import epitran
 import json
+try:
+    import grapheme
+except ImportError:
+    grapheme = None
+
 
 
 class YorubaG2P:
@@ -116,12 +121,25 @@ class YorubaG2P:
     def __init__(self):
         self.epi = epitran.Epitran("yor-Latn")
 
+    def _graphemes(self, text: str):
+        """
+        Unicode-safe grapheme iterator.
+        """
+        if grapheme is None:
+            raise ImportError(
+                "The 'grapheme' package is required. Install with: pip install grapheme"
+            )
+        text = unicodedata.normalize("NFC", text)
+        return grapheme.graphemes(text)
+
+
     # -------------------
     # Text & vocab
     # -------------------
     @staticmethod
     def normalize_text(text: str) -> str:
-        return unicodedata.normalize("NFC", text).lower()
+        return unicodedata.normalize("NFC", text.strip()).lower()
+
 
     def build_vocab_from_labs(self, lab_root: str, splits=("train", "valid", "test")):
         vocab_counter = Counter()
@@ -143,26 +161,44 @@ class YorubaG2P:
     # -------------------
     # Vowel & IPA helpers
     # -------------------
+    # def get_orthographic_vowels_and_tones(self, word: str):
+    #     """
+    #     From orthographic Yoruba word (NFC), return list of (ipa_vowel, tone)
+    #     in vowel order.
+    #     """
+    #     word = unicodedata.normalize("NFC", word)
+    #     vt = []
+    #     i = 0
+    #     while i < len(word):
+    #         ch = word[i]
+    #         if i + 1 < len(word):
+    #             ch2 = word[i:i+2]
+    #             if ch2 in self.VOWEL_TONE_MAP:
+    #                 vt.append(self.VOWEL_TONE_MAP[ch2])
+    #                 i += 2
+    #                 continue
+    #         if ch in self.VOWEL_TONE_MAP:
+    #             vt.append(self.VOWEL_TONE_MAP[ch])
+    #         i += 1
+    #     return vt
+
     def get_orthographic_vowels_and_tones(self, word: str):
         """
         From orthographic Yoruba word (NFC), return list of (ipa_vowel, tone)
         in vowel order.
+
+        Grapheme-aware: handles combining tone marks safely (e.g., ẹ́, ọ̀).
         """
         word = unicodedata.normalize("NFC", word)
         vt = []
-        i = 0
-        while i < len(word):
-            ch = word[i]
-            if i + 1 < len(word):
-                ch2 = word[i:i+2]
-                if ch2 in self.VOWEL_TONE_MAP:
-                    vt.append(self.VOWEL_TONE_MAP[ch2])
-                    i += 2
-                    continue
-            if ch in self.VOWEL_TONE_MAP:
-                vt.append(self.VOWEL_TONE_MAP[ch])
-            i += 1
+
+        for g in self._graphemes(word):
+            # g is a grapheme cluster like "ẹ́", "ọ̀", "a", "ń"
+            if g in self.VOWEL_TONE_MAP:
+                vt.append(self.VOWEL_TONE_MAP[g])
+
         return vt
+
 
     def ipa_to_phones(self, ipa_str: str):
         """

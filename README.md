@@ -53,6 +53,10 @@ It outputs:
 ---
 
 ## Installation
+pip install epitran grapheme
+
+This version uses Unicode grapheme-aware processing to ensure correct handling of Yorùbá underdot+tone-marked vowels.
+
 
 ### From PyPI (recommended)
 

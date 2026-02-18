@@ -14,6 +14,7 @@ requires-python = ">=3.10"
 
 dependencies = [
   "epitran>=1.22",
+  "grapheme>=0.6.0"
 ]
 
 license = { text = "MIT" }
