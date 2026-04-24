@@ -35,3 +35,10 @@ preferred-citation:
       orcid: ""
   year: 2025
   repository-code: "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+  
+  identifiers:
+    - type: doi
+      value: 10.5281/zenodo.19721964
+
+  version: v0.2.4
+  date-released: 2026-04-24

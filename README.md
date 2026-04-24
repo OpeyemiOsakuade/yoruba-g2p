@@ -33,6 +33,7 @@
 
 </p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19721964.svg)](https://doi.org/10.5281/zenodo.19721964)
 
 
 # 🇳🇬 Yoruba-G2P  
@@ -68,7 +69,7 @@ pip install yoruba-g2p
 ### From GitHub
 
 ```bash
-pip install git+https://github.com/<your-username>/yoruba-g2p.git
+pip install git+https://github.com/OpeyemiOsakuade/yoruba-g2p.git
 ```
 
 ---
@@ -79,10 +80,12 @@ pip install git+https://github.com/<your-username>/yoruba-g2p.git
 If you use this work, please cite:
 
 ```bibtex
-@software{osakuade2025yoruba_g2p,
+@software{osakuade2026yoruba_g2p,
   author = {Osakuade, Opeyemi},
   title = {Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá},
-  year = {2025},
+  year = {2026},
+  version = {v0.2.4},
+  doi = {10.5281/zenodo.19721964},
   url = {https://github.com/OpeyemiOsakuade/yoruba-g2p}
 }
 ```
@@ -306,22 +309,6 @@ Steps:
 
 Issues, feature requests, and Yoruba orthography corrections are welcome.
 
----
-
-## 📣 Citation (for research)
-
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@software{osakuade2025yoruba_g2p,
-  author = {Osakuade, Opeyemi},
-  title = {Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá},
-  year = {2025},
-  url = {https://github.com/OpeyemiOsakuade/yoruba-g2p}
-}
-```
 ---
 
 ## License
