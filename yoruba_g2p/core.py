@@ -10,9 +10,6 @@ try:
     import grapheme
 except ImportError:
     grapheme = None
-
-
-
 class YorubaG2P:
     """
     End-to-end Yoruba G2P tool:
