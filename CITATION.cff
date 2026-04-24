@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use Yoruba-G2P in your research, teaching, or software, please cite it as below."
+title: "Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá"
+type: software
+authors:
+  - family-names: "Osakuade"
+    given-names: "Opeyemi"
+    orcid: "https://orcid.org/0009-0003-8499-7572"
+
+year: 2025
+date-released: 2025-11-14
+
+repository-code: "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+url: "https://github.com/OpeyemiOsakuade/yoruba-g2p"
+
+abstract: "Yoruba-G2P is a tone-aware grapheme-to-phoneme converter for Yorùbá, designed to support speech and language technology development for Yorùbá and related low-resource language processing tasks."
+
+keywords:
+  - "Yorùbá"
+  - "grapheme-to-phoneme conversion"
+  - "G2P"
+  - "tone-aware NLP"
+  - "speech processing"
+  - "low-resource languages"
+  - "African languages"
+
+license: "MIT"
+
+preferred-citation:
+  type: software
+  title: "Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá"
+  authors:
+    - family-names: "Osakuade"
+      given-names: "Opeyemi"
+      orcid: ""
+  year: 2025
+  repository-code: "https://github.com/OpeyemiOsakuade/yoruba-g2p"
