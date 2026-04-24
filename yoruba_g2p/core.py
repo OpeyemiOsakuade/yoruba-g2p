@@ -130,7 +130,7 @@ class YorubaG2P:
             )
         text = unicodedata.normalize("NFC", text)
         return grapheme.graphemes(text)
-    
+
     # -------------------
     # Text & vocab
     # -------------------
@@ -138,7 +138,6 @@ class YorubaG2P:
     @staticmethod
     def normalize_text(text: str) -> str:
         return unicodedata.normalize("NFC", text.strip()).lower()
-
 
     def build_vocab_from_labs(self, lab_root: str, splits=("train", "valid", "test")):
         vocab_counter = Counter()
@@ -197,7 +196,6 @@ class YorubaG2P:
                 vt.append(self.VOWEL_TONE_MAP[g])
 
         return vt
-
 
     def ipa_to_phones(self, ipa_str: str):
         """
