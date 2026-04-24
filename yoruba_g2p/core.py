@@ -10,6 +10,8 @@ try:
     import grapheme
 except ImportError:
     grapheme = None
+
+
 class YorubaG2P:
     """
     End-to-end Yoruba G2P tool:
@@ -128,11 +130,11 @@ class YorubaG2P:
             )
         text = unicodedata.normalize("NFC", text)
         return grapheme.graphemes(text)
-
-
+    
     # -------------------
     # Text & vocab
     # -------------------
+    
     @staticmethod
     def normalize_text(text: str) -> str:
         return unicodedata.normalize("NFC", text.strip()).lower()
