@@ -51,20 +51,7 @@ It outputs:
 - ✔ No ML training required → fully rule-based + Epitran-backed
 
 ---
-## 📣 Citation (for research)
 
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@software{osakuade2025yoruba_g2p,
-  author = {Osakuade, Opeyemi},
-  title = {Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá},
-  year = {2025},
-  url = {https://github.com/OpeyemiOsakuade/yoruba-g2p}
-}
----
 
 ## Installation
 pip install epitran grapheme
@@ -84,6 +71,21 @@ pip install yoruba-g2p
 pip install git+https://github.com/<your-username>/yoruba-g2p.git
 ```
 
+---
+## 📣 Citation (for research)
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@software{osakuade2025yoruba_g2p,
+  author = {Osakuade, Opeyemi},
+  title = {Yoruba-G2P: A tone-aware grapheme-to-phoneme converter for Yorùbá},
+  year = {2025},
+  url = {https://github.com/OpeyemiOsakuade/yoruba-g2p}
+}
+```
 ---
 
 ## Quick Start (Python API)
@@ -319,6 +321,7 @@ If you use this work, please cite:
   year = {2025},
   url = {https://github.com/OpeyemiOsakuade/yoruba-g2p}
 }
+```
 ---
 
 ## License
