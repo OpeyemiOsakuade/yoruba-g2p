@@ -94,9 +94,9 @@ If you use this work, please cite:
 ## Quick Start (Python API)
 
 ```python
-from yoruba_g2p import YorG2P
+from yoruba_g2p import YorubaG2P
 
-g2p = YorG2P()
+g2p = YorubaG2P()
 print(g2p.to_ipa("ọ̀yọ́"))
 print(g2p.to_ascii("ọ̀mọ́"))
 ```
