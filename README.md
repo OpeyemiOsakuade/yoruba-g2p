@@ -98,7 +98,7 @@ from yoruba_g2p import YorubaG2P
 
 g2p = YorubaG2P()
 print(g2p.yoruba_word_to_ipa_phones("ọ̀yọ́"))
-print(g2p.to_ascii("ọ̀mọ́"))
+print(g2p.ipa_phone_to_ascii("ọ̀mọ́"))
 ```
 
 Output:
